@@ -82,7 +82,7 @@ Here's the content of the `manifest.json` file used for the MyLeads Chrome exten
  "128": "dollar-icon.png"
 }
 }
-
+````
 Make sure to include this file in the root directory of your extension.
 
 ### Save Tab Feature in Chrome Extension
