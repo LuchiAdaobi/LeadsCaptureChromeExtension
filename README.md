@@ -98,8 +98,9 @@ Also note that this application uses the Chrome tabs API to save the active tab.
 ### Feedback and Contributions
 I welcome your feedback and suggestions to enhance the functionality and usability of MyLeads. Feel free to open issues or submit pull requests in the GitHub repository.
 
-Live site: [Link to Live Site](https://leadcaptureapp.netlify.app/)
-Git repo: [Link to Git Repo](https://github.com/LuchiAdaobi/chromeExtension)
+Live site: [Link to Live Site](https://leadcaptureapp.netlify.app/).
+
+Git repo: [Link to Git Repo](https://github.com/LuchiAdaobi/chromeExtension).
 
 A heartfelt shout-out to Scrimba for providing the initial spark of inspiration, and to the amazing coding community for its unwavering support and camaraderie
 
