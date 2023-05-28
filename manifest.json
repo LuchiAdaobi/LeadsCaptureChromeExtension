@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Leads Tracker",
+  "version": "1.0",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "dollar-icon.png",
+      "48": "dollar-icon.png",
+      "128": "dollar-icon.png"
+    }
+  },
+  "permissions": ["tabs"],
+  "host_permissions": ["<all_urls>"],
+  "icons": {
+    "16": "dollar-icon.png",
+    "48": "dollar-icon.png",
+    "128": "dollar-icon.png"
+  }
+}
+
