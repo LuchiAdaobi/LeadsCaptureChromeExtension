@@ -1,68 +1,91 @@
 LeadCapture App
-This is a simple web application that allows you to save and manage a list of leads (URLs) for future reference. You can add new leads, delete individual leads, delete all leads, search for specific leads, and even save the currently active tab as a lead.
+MyLeads is a powerful lead management tool that allows you to organize and track your leads with ease. This project was inspired by Scrimba's lead management tutorial, but I added my own unique twists and extended its functionality to create a personalized tool.
 
 Getting Started
-To use this application, simply open the index.html file in your preferred web browser. The app will load, and you can start managing your leads right away.
+To use this application, follow the steps below:
+
+Clone the repository:
+
+bash
+Copy code
+git clone https://github.com/yourusername/myleads.git
+Open the index.html file in your preferred web browser.
+
+The app will load, and you can start managing your leads right away.
 
 Features
-Saving Leads
-You can save leads by entering the URL in the input field and clicking the "Save" button. The lead will be added to the list if it is not already present.
+MyLeads offers the following features:
 
-Deleting Leads
-To delete a single lead, click the "x" button next to the lead you want to remove. The lead will be removed from the list, and the changes will be saved automatically.
+Saving Leads: Save leads with a single click or by entering a URL.
 
-To delete all leads, double-click the "Delete All" button. This action will clear the entire list of leads, and the changes will be saved automatically.
+Deleting Leads: Delete individual leads or clear the entire list with the "Delete All" button.
 
-Viewing Leads
-All your saved leads are displayed in a list format. Each lead is presented as a clickable link, allowing you to open it in a new tab. To visit a lead, simply click on the link.
+Viewing Leads: All your saved leads are displayed as clickable links, allowing you to open them in new tabs.
 
-Searching Leads
-You can search for specific leads by typing your search query in the search input field. The list will dynamically update, showing only the leads that match your search term.
+Searching Leads: Use the search feature to find specific leads quickly.
 
-Saving the Active Tab
-By clicking the "Save Tab" button, the currently active tab in your web browser will be saved as a lead. If the URL of the active tab is already in the list, it will not be saved again.
+Preventing Duplicate Entries: The app automatically checks for duplicate entries and prevents saving the same lead multiple times.
+
+Saving the Active Tab: Click the "Save Tab" button to save the URL of the currently active tab as a lead.
 
 Local Storage
-The application uses local storage to persist your saved leads. When you add, delete, or modify leads, the changes are automatically saved in the local storage of your browser. When you revisit the app, your leads will be loaded from the local storage, ensuring your data is retained between sessions.
+The application utilizes local storage to persist your saved leads. Whenever you add, delete, or modify leads, the changes are automatically saved in the local storage of your browser. When you revisit the app, your leads will be loaded from the local storage, ensuring your data is retained between sessions.
 
+MyLeads: Lead Management Chrome Extension
+To use MyLeads as a Chrome extension in your local environment, follow these steps:
 
-MyLeads Chrome Extension
-This is a guide on how to set up the MyLeads app as a Chrome extension in your local environment. Additionally, we will explain that the "Save Tab" feature only works when the app is functioning as a Chrome extension.
+Clone the repository:
 
-Setting Up as a Chrome Extension
-To set up the MyLeads app as a Chrome extension on your local machine, follow these steps:
-
-Create a new directory for your project and navigate to it using the command line or terminal.
-
-Copy and paste the code for the MyLeads app into a new JavaScript file (e.g., popup.js) within the project directory.
-
-Create a new HTML file (e.g., popup.html) within the project directory.
-
-Inside popup.html, add the following code:
-
-html
+bash
 Copy code
-<!DOCTYPE html>
-<html>
-<head>
-  <title>MyLeads Extension</title>
-  <script src="popup.js"></script>
-</head>
-<body>
-  <!-- Add any necessary HTML elements here -->
-</body>
-</html>
-Open Google Chrome and go to chrome://extensions in a new tab.
+git clone https://github.com/yourusername/myleads.git
+Open Google Chrome and go to chrome://extensions.
 
-Enable the "Developer mode" toggle switch located in the top right corner of the extensions page.
+Turn on the "Developer mode" toggle in the top right corner.
 
-Click the "Load unpacked" button that appears after enabling developer mode.
+Click on "Load unpacked" and select the cloned repository folder.
 
-In the file selection dialog, navigate to and select the directory containing your project files (the directory where popup.html and popup.js are located).
+The MyLeads extension should now be added to your Chrome browser.
 
-Click "Open" to load the MyLeads extension into Chrome.
+Favicon
+To add a favicon to the LeadCapture App, follow these steps:
 
-The MyLeads icon should now appear among your Chrome extensions. You can click on it to open the popup HTML page and interact with the app.
+Create or find an image that you want to use as your favicon. The recommended size for favicons is 16x16 pixels or 32x32 pixels.
+
+Save the favicon image file with a suitable format (e.g., .ico, .png, .jpg) and give it a meaningful name (e.g., favicon.ico).
+
+Place the favicon file in the root directory of the project.
+
+The favicon will be automatically loaded by the browser when you open the application.
+
+Please ensure that the favicon file is named favicon.ico and placed in the root directory of the project. I named mine dollar-icon.png.
+
+Manifest.json
+Here's the content of the manifest.json file used for the MyLeads Chrome extension:
+
+json
+Copy code
+{
+  "manifest_version": 3,
+  "name": "Leads Tracker",
+  "version": "1.0",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "dollar-icon.png",
+      "48": "dollar-icon.png",
+      "128": "dollar-icon.png"
+    }
+  },
+  "permissions": ["tabs"],
+  "host_permissions": ["<all_urls>"],
+  "icons": {
+    "16": "dollar-icon.png",
+    "48": "dollar-icon.png",
+    "128": "dollar-icon.png"
+  }
+}
+Make sure to include this file in the root directory of your extension.
 
 Save Tab Feature in Chrome Extension
 Please note that the "Save Tab" feature in the MyLeads app will only work when it is functioning as a Chrome extension. This is because it relies on the Chrome tabs API to access the active tab information.
@@ -73,4 +96,12 @@ To utilize the full functionality of the MyLeads app, make sure it is set up and
 
 Please note that this application uses the Chrome tabs API to save the active tab. It may not work as expected in browsers other than Chrome.
 
-Feel free to explore and use this simple lead management application to stay organized and keep track of important URLs!
+Feedback and Contributions
+I welcome your feedback and suggestions to enhance the functionality and usability of MyLeads. Feel free to open issues or submit pull requests in the GitHub repository.
+
+Live Site: Link to Live Site
+Git Repo: Link to Git Repo
+
+A heartfelt shout-out to Scrimba for providing the initial spark of inspiration, and to the amazing coding community for its unwavering support and camaraderie.
+
+Happy lead management! 🚀
