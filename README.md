@@ -8,8 +8,8 @@ To use this application, follow the steps below:
 
 1. Clone the repository:
 
-```
-git clone https://github.com/yourusername/myleads.git```
+`
+git clone https://github.com/yourusername/myleads.git`
 
 Open the index.html file in your preferred web browser.
 
@@ -38,8 +38,8 @@ To use MyLeads as a Chrome extension in your local environment, follow these ste
 
 1. Clone the repository:
 
-```
-git clone https://github.com/yourusername/myleads.git```
+`
+git clone https://github.com/yourusername/myleads.git`
 
 2. Open Google Chrome and go to `chrome://extensions`.
 3. Turn on the "Developer mode" toggle in the top right corner.
@@ -85,9 +85,7 @@ Here's the content of the `manifest.json` file used for the MyLeads Chrome exten
 
 Make sure to include this file in the root directory of your extension.
 
-Make sure to include this file in the root directory of your extension.
-
-### Save Tab Feature in Chrome Extension
+Save Tab Feature in Chrome Extension
 
 Please note that the "Save Tab" feature in the MyLeads app will only work when it is functioning as a Chrome extension. This is because it relies on the Chrome tabs API to access the active tab information.
 
@@ -97,7 +95,7 @@ To utilize the full functionality of the MyLeads app, make sure it is set up and
 
 Please note that this application uses the Chrome tabs API to save the active tab. It may not work as expected in browsers other than Chrome.
 
-##Feedback and Contributions
+### Feedback and Contributions
 I welcome your feedback and suggestions to enhance the functionality and usability of MyLeads. Feel free to open issues or submit pull requests in the GitHub repository.
 
 Live site: [Link to Live Site](https://leadcaptureapp.netlify.app/)
@@ -106,4 +104,3 @@ Git repo: [Link to Git Repo](https://github.com/LuchiAdaobi/chromeExtension)
 A heartfelt shout-out to Scrimba for providing the initial spark of inspiration, and to the amazing coding community for its unwavering support and camaraderie.
 
 Happy lead management! 🚀
-```
