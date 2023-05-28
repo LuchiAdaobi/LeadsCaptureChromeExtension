@@ -81,7 +81,7 @@ Here's the content of the `manifest.json` file used for the MyLeads Chrome exten
  "48": "dollar-icon.png",
  "128": "dollar-icon.png"
 }
-}
+}```
 
 Make sure to include this file in the root directory of your extension.
 
@@ -93,7 +93,7 @@ When the MyLeads app is running as a Chrome extension, clicking the "Save Tab" b
 
 To utilize the full functionality of the MyLeads app, make sure it is set up and running as a Chrome extension in your local environment.
 
-Please note that this application uses the Chrome tabs API to save the active tab. It may not work as expected in browsers other than Chrome.
+Also note that this application uses the Chrome tabs API to save the active tab. It may not work as expected in browsers other than Chrome.
 
 ### Feedback and Contributions
 I welcome your feedback and suggestions to enhance the functionality and usability of MyLeads. Feel free to open issues or submit pull requests in the GitHub repository.
