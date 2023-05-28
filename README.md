@@ -61,7 +61,7 @@ Please ensure that the favicon file is named `favicon.ico` and placed in the roo
 
 Here's the content of the `manifest.json` file used for the MyLeads Chrome extension:
 
-```json
+````json
 {
 "manifest_version": 3,
 "name": "Leads Tracker",
@@ -81,11 +81,11 @@ Here's the content of the `manifest.json` file used for the MyLeads Chrome exten
  "48": "dollar-icon.png",
  "128": "dollar-icon.png"
 }
-}```
+}
 
 Make sure to include this file in the root directory of your extension.
 
-Save Tab Feature in Chrome Extension
+### Save Tab Feature in Chrome Extension
 
 Please note that the "Save Tab" feature in the MyLeads app will only work when it is functioning as a Chrome extension. This is because it relies on the Chrome tabs API to access the active tab information.
 
@@ -101,6 +101,6 @@ I welcome your feedback and suggestions to enhance the functionality and usabili
 Live site: [Link to Live Site](https://leadcaptureapp.netlify.app/)
 Git repo: [Link to Git Repo](https://github.com/LuchiAdaobi/chromeExtension)
 
-A heartfelt shout-out to Scrimba for providing the initial spark of inspiration, and to the amazing coding community for its unwavering support and camaraderie.
+A heartfelt shout-out to Scrimba for providing the initial spark of inspiration, and to the amazing coding community for its unwavering support and camaraderie
 
 Happy lead management! 🚀
