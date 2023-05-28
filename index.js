@@ -30,7 +30,7 @@ function render(leads) {
 }
 
 // DELETE ALL
-deleteBtn.addEventListener("dblclick", () => {
+deleteBtn.addEventListener("click", () => {
   localStorage.clear();
   myLeads = [];
   render(myLeads);
