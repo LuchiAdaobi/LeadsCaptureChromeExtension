@@ -2,7 +2,7 @@
 const inputEl = document.getElementById("input-el");
 const searchInput = document.getElementById("search-input");
 const saveBtn = document.getElementById("save-btn");
-const deleteBtn = document.getElementById("delete-btn");
+const deleteAllBtn = document.getElementById("delete-btn");
 const tabBtn = document.getElementById("tab-btn");
 const liBtns = document.querySelectorAll(".li-btn");
 const ulEl = document.getElementById("ul-el");
@@ -10,7 +10,7 @@ const ulEl = document.getElementById("ul-el");
 let myLeads = [];
 let filteredLeads = [];
 
-// LOCAL STORAGE
+// DISPLAY ITEM FROM LOCAL STORAGE
 
 const leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"));
 
@@ -29,18 +29,34 @@ function render(leads) {
   ulEl.innerHTML = listItems;
 }
 
-// DELETE ALL
-deleteBtn.addEventListener("click", () => {
-  localStorage.clear();
-  myLeads = [];
+// ADD ELEMENT TO UI WHEN BUTTON IS CLICKED
+saveBtn.addEventListener("click", () => {
+  if (!inputEl.value || myLeads.includes(inputEl.value)) {
+    return;
+  }
+  const newLead = inputEl.value;
+  myLeads.push(newLead);
+
+  localStorage.setItem("myLeads", JSON.stringify(myLeads));
+  inputEl.value = "";
   render(myLeads);
+});
+
+// DELETE ALL
+deleteAllBtn.addEventListener("click", () => {
+  const confirmation = confirm("Are you sure you want to delete all leads?");
+
+  if (confirmation) {
+    localStorage.clear();
+    myLeads = [];
+    render(myLeads);
+  };
 });
 
 // DELETE SINGLE LIST ELEMENT
 ulEl.addEventListener("click", (e) => {
   if (e.target.classList.contains("li-btn")) {
-    const button = e.target;
-    const listItem = button.parentElement;
+    const listItem = e.target.parentElement;
     const index = Array.from(listItem.parentNode.children).indexOf(listItem);
 
     myLeads.splice(index, 1);
@@ -48,6 +64,7 @@ ulEl.addEventListener("click", (e) => {
     render(myLeads);
   }
 });
+
 
 // SAVE TAB
 tabBtn.addEventListener("click", () => {
@@ -61,20 +78,6 @@ tabBtn.addEventListener("click", () => {
   });
 });
 
-// ADD ELEMENT TO UI WHEN BTN IS CLICKED
-saveBtn.addEventListener("click", () => {
-  if (!inputEl.value || myLeads.includes(inputEl.value)) {
-    return;
-  }
-  const newLead = inputEl.value;
-  myLeads.push(newLead);
-  filteredLeads.push(newLead);
-
-  localStorage.setItem("myLeads", JSON.stringify(myLeads));
-  inputEl.value = "";
-  render(myLeads);
-});
-
 // SEARCH FILTER
 searchInput.addEventListener("input", () => {
   const searchTerm = searchInput.value.toLowerCase();
@@ -83,4 +86,3 @@ searchInput.addEventListener("input", () => {
   );
   render(filteredLeads);
 });
-
