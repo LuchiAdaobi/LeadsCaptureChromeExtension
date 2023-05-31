@@ -1,6 +1,7 @@
 body {
   box-sizing: border-box;
-  margin: .6rem auto;
+  margin: 0 auto;
+  padding: .8rem;
   font-family: Arial, Helvetica, sans-serif;
   max-width: 80%;
   min-width: 400px;
