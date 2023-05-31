@@ -5,17 +5,12 @@
   "action": {
     "default_popup": "index.html",
     "default_icon": {
-      "16": "dollar-icon.png",
-      "48": "dollar-icon.png",
-      "128": "dollar-icon.png"
+      "16": "favicon.png",
+      "48": "favicon.png",
+      "128": "favicon.png"
     }
   },
   "permissions": ["tabs"],
-  "host_permissions": ["<all_urls>"],
-  "icons": {
-    "16": "dollar-icon.png",
-    "48": "dollar-icon.png",
-    "128": "dollar-icon.png"
-  }
+  "host_permissions": ["<all_urls>"]
 }
 
